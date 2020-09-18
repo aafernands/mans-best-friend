@@ -2,10 +2,62 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Man’s Best Friend</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&family=Satisfy&display=swap');
+
+        h1 {
+            text-align: center;
+            font-family: 'Satisfy', cursive;
+            font-size: 30px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            line-height: 20px;
+            margin: 50px 20px 20px 20px;
+
+        }
+
+        h1:hover {
+            color: red;
+        }
+
+        p {
+            font-family: 'Noto Serif JP', serif;
+            font-size: 12px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            line-height: 20px;
+            text-align: justify;
+        }
+
+        body {
+            background-color: #dfdfdf;
+        }
+
+        .dogimg {
+            display: flex;
+            width: 100%;
+            height: auto;
+        }
+
+        .content {
+            padding: 20px;
+            margin: 30px 30px 30px 30px;
+        }
+
+        .footer {
+            padding: 20px;
+            margin: 30px 30px 30px 30px;
+            text-align: center;
+        }
+    </style>
+
 </head>
 
 <header>
@@ -14,7 +66,16 @@
 
 <body>
 
+
     <section class="content">
+        <nav class="nav nav-pills flex-column flex-sm-row">
+            <a class="flex-sm-fill text-sm-center nav-link active" href="#">HOME</a>
+            <a class="flex-sm-fill text-sm-center nav-link" href="#">CONTACT</a>
+            <a class="flex-sm-fill text-sm-center nav-link disabled" href="#" tabindex="-1" aria-disabled="true">ABOUT
+                US</a>
+        </nav>
+        <br>
+        <hr>
         <p>The dog is a loving companion to a man. He is happy to go everywhere with his master. He shows his affection
             for
             his master by wagging his tail and licking his hand or face.
@@ -66,11 +127,22 @@
     <img class="dogimg"
         src="https://cdn.shopify.com/s/files/1/2327/5701/articles/Omega-3-For-Dogs_1200x.jpg?v=1561351694"
         alt="Cute Dog">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
 </body>
 
 <footer>
     <div class="footer">
-        &copy; 2020 Website Designed by <a href="https://twitter.com/alexafernands">Alex Fernandes</a>  
+        &copy; 2020 Website Designed by <a href="https://twitter.com/alexafernands">Alex Fernandes</a>
     </div>
 </footer>
 
