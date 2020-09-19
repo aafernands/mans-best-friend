@@ -8,26 +8,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Man’s Best Friend</title>
-
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&family=Satisfy&display=swap');
 
         h1 {
             text-align: center;
-            font-family: 'Satisfy', cursive;
+            font-family: 'Cormorant Garamond', serif;
             font-size: 30px;
             color: rgb(0, 0, 0);
             font-weight: bold;
             line-height: 20px;
             margin: 50px 20px 20px 20px;
+        }
 
+        p {
+            text-align: justify;
         }
 
         h1:hover {
             color: red;
         }
 
-        p {
+        h6 {
             font-family: 'Noto Serif JP', serif;
             font-size: 12px;
             color: rgb(0, 0, 0);
@@ -37,18 +39,24 @@
         }
 
         body {
-            background-color: #dfdfdf;
+            background-color: #ffffff;
         }
 
-        .dogimg {
-            display: flex;
-            width: 100%;
-            height: auto;
-        }
 
         .content {
-            padding: 20px;
-            margin: 30px 30px 30px 30px;
+            padding: 0px 20px 20px 20px;
+            margin: 30px;
+            width: 100%;
+            height: auto;
+            width: auto%;
+
+
+        }
+
+        .header {
+            padding: 0px 20px 20px 20px;
+            width: auto%;
+            height: auto;
         }
 
         .footer {
@@ -57,98 +65,59 @@
             text-align: center;
         }
 
-       
+        .img-fluid {
+
+            width: auto%;
+            height: auto;
+        }
+
+        .contact {
+            margin: 50px;
+            padding: 20px;
+            display: flex;
+        }
+
+        .h2 {
+            color: green;
+        }
+
+        #h2 {
+            color: rgb(19, 0, 128);
+        }
     </style>
 
 </head>
 
-<header>
-    <h1>Man’s Best Friend</h1>
-</header>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contactme.html">contact us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="aboutus.html">about us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
+            </li>
+        </ul>
+    </div>
+</nav>
 
 <body>
-    <div class="container">
-
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contactme.html">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="aboutus.html">About US</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-
-
-
-
-        <br>
-        <hr>
-        </section>
-
-        <form class="container-sm">
-
-            <h3>Contact us: </h3>
-            <div class="form-row">
-                <div class="col">
-                    <input type="text" class="form-control" placeholder="First name">
-                </div>
-                <div class="col">
-                    <input type="text" class="form-control" placeholder="Last name">
-                </div>
-            </div>
-            <br>
-            <div class="form-group">
-                <label for="exampleFormControlInput1">Email address:</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-            </div>
-            <div class="form-group">
-                <label for="exampleFormControlSelect1">State:</label>
-                <select class="form-control" id="exampleFormControlSelect1">
-                    <option>New Jersey</option>
-                    <option>New York</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="exampleFormControlTextarea1">Your Message: </label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-            <div class="form-group">
-                <label for="exampleFormControlFile1">Example file input</label>
-                <input type="file" class="form-control-file" id="exampleFormControlFile1">
-            </div>
-            <input class="btn btn-primary" type="submit" value="Submit">
-
-        </form>
-
-
-
-
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-            crossorigin="anonymous"></script>
-
+    <div class="page-header">
+        <h1 href="index." class="display-7">Man’s Best Friend</h1>
     </div>
+
 
 </body>
 
